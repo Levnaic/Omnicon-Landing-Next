@@ -1,0 +1,35 @@
+.hero {
+  text-align: center;
+  padding: 120px 0;
+
+  &-tag {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(124, 92, 255, 0.15);
+    color: #7c5cff;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  &-title {
+    font-size: clamp(32px, 6vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  &-subtitle {
+    color: #666;
+    font-size: 18px;
+    margin: 16px 0 32px;
+  }
+
+  &-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

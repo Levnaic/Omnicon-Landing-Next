@@ -1,0 +1,35 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  font-size: 20px;
+
+  &.solid {
+    background: #7c5cff;
+    color: white;
+    border: none;
+
+    &:hover {
+      background: #6a4de3;
+      color: white;
+    }
+  }
+
+  &.ghost {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: #111;
+
+    &:hover {
+      border-color: #7c5cff;
+      background: rgba(124, 92, 255, 0.1);
+      color: #0e0e0e;
+    }
+  }
+}
