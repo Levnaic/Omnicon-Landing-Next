@@ -1,0 +1,1 @@
+-kartice se nekada ne ucitaju kada se ide sa features na pricing page
