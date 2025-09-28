@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./navbar.scss";
+import { Button } from "@/components";
 
 // Define your pages
 const pages = [
@@ -22,7 +23,7 @@ const Navbar = () => {
       animate={{ y: 0, opacity: 1 }}
     >
       <div className="nav-inner">
-        <Link href="/" style={{ fontWeight: 800, textDecoration: "none" }}>
+        <Link href="/" className="link">
           YourBrand
         </Link>
 
@@ -47,10 +48,7 @@ const Navbar = () => {
             );
           })}
         </div>
-
-        <Link href="/pricing" className="btn solid">
-          Get Started
-        </Link>
+        <Button href="/pricing">Get Started</Button>
       </div>
     </motion.nav>
   );

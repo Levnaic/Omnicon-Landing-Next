@@ -1,0 +1,91 @@
+export interface Feature {
+  id: number;
+  title: string;
+  description: string;
+}
+
+export interface FeaturesSection {
+  title: string;
+  subtitle: string;
+  featuresList: Feature[];
+}
+
+export interface PricingPlan {
+  id: string;
+  name: string;
+  price: string;
+  period: string;
+  description: string;
+  features: string[];
+  highlighted: boolean;
+  ctaText: string;
+}
+
+export interface Testimonial {
+  id: number;
+  name: string;
+  position: string;
+  company: string;
+  avatar: string;
+  content: string;
+  rating: number;
+}
+
+export interface FAQ {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+export interface FooterLink {
+  label: string;
+  href: string;
+}
+
+export interface SocialLink {
+  platform: string;
+  url: string;
+  icon: string;
+}
+
+export interface Hero {
+  title: string;
+  subtitle: string;
+  description: string;
+  ctaButton: string;
+  secondaryButton: string;
+}
+
+export interface Company {
+  name: string;
+  description: string;
+  address: string;
+  phone: string;
+  email: string;
+}
+
+export interface Footer {
+  company: Company;
+  links: {
+    product: FooterLink[];
+    company: FooterLink[];
+    support: FooterLink[];
+    legal: FooterLink[];
+  };
+  social: SocialLink[];
+}
+
+export interface Pricing {
+  title: string;
+  subtitle: string;
+  plans: PricingPlan[];
+}
+
+export interface ContentData {
+  hero: Hero;
+  features: FeaturesSection;
+  pricing: Pricing;
+  testimonials: Testimonial[];
+  faq: FAQ[];
+  footer: Footer;
+}

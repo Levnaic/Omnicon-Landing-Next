@@ -1,0 +1,93 @@
+@import "variables";
+
+.hero {
+  margin: $spacing-3xl 0;
+  padding: 0 $spacing-4xl;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  &-right,
+  &-left {
+    width: 50%;
+  }
+
+  &-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  &-title {
+    font-size: clamp(32px, 6vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  &-subtitle {
+    color: $text-secondary;
+    font-size: 18px;
+    margin: 16px 0 32px;
+  }
+
+  &-right {
+    padding: $spacing-2xl;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Responsive breakpoints
+@media (max-width: $breakpoint-desktop) {
+  .hero {
+    padding: 0 $spacing-3xl;
+
+    &-video {
+      max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+    padding: 0 $spacing-2xl;
+
+    & > * {
+      width: 100%;
+    }
+
+    &-right {
+      padding: $spacing-xl 0;
+      order: -1; // Move video above text on mobile if desired
+    }
+
+    &-video {
+      max-width: 400px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .hero {
+    padding: 0 $spacing-lg;
+    margin: $spacing-2xl 0;
+
+    &-video {
+      max-width: 320px;
+    }
+  }
+}

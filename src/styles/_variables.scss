@@ -71,7 +71,7 @@ $border-radius-full: 999px;
 // ===== SHADOWS =====
 $shadow-sm: 0 10px 30px rgba(0, 0, 0, 0.08);
 $shadow-md: 0 16px 40px rgba(0, 0, 0, 0.12);
-$shadow-focus: 0 0 0 2px #7c5cff;
+$shadow-focus: 0 0 0 2px $primary-color;
 
 // ===== TRANSITIONS =====
 $transition-fast: 0.2s ease;

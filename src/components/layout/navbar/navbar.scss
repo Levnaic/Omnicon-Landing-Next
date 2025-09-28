@@ -1,44 +1,54 @@
+@import "variables";
+
+.nav {
+  margin-top: 20px;
+}
+
 .nav-inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: $spacing-2xl;
 }
 
 .nav-tabs {
   display: flex;
-  gap: 8px;
-  background: rgba(0,0,0,0.04);
-  border-radius: 12px;
+  gap: $spacing-sm;
+  background: rgba($black, 0.04);
+  border-radius: $border-radius-md;
   padding: 6px;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid $border-light;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .nav-tab {
+  text-decoration: none;
   position: relative;
   appearance: none;
   background: transparent;
-  padding: 8px 12px;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 20px;
-  color: #344054;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius-sm;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-xl;
+  color: $text-light;
   cursor: pointer;
   outline: none;
 
   border: 1px solid transparent;
-  transition: background .2s ease, border-color .2s ease, color .2s ease, box-shadow .2s ease;
+  transition: background $transition-fast, border-color $transition-fast,
+    color $transition-fast, box-shadow $transition-fast;
 
   &.is-active {
-    color: #1f2a44;
+    color: $text-primary;
     border-color: transparent;
   }
 
   &:hover {
-    border-color: #7c3aed;
-    background: rgba(124, 58, 237, 0.08);
-    color: #1f2a44;
-    box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.12);
+    border-color: $primary-color;
+    background: rgba($primary-color, 0.08);
+    color: $text-primary;
+    box-shadow: $shadow-focus;
   }
 }
 
@@ -46,7 +56,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: #ece9ff;
-  border-radius: 10px;
-  box-shadow: inset 0 0 0 1px #d8d2ff;
+  background: $bg-tag;
+  border-radius: $border-radius-sm;
+  box-shadow: inset 0 0 0 1px rgba($primary-color, 0.3);
 }

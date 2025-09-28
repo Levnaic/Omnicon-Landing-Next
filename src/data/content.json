@@ -1,0 +1,242 @@
+{
+  "hero": {
+    "title": "Transform Your Business with Our Solution",
+    "subtitle": "Powerful tools and features designed to help you grow, scale, and succeed in today's competitive market.",
+    "description": "Join thousands of satisfied customers who have already transformed their business operations with our comprehensive platform.",
+    "ctaButton": "Get Started Today",
+    "secondaryButton": "Watch Demo"
+  },
+  "features": {
+    "title": "Powerful Features for Your Business",
+    "subtitle": "Everything you need to streamline your operations and boost productivity",
+    "featuresList": [
+      {
+        "id": 1,
+        "title": "Unified Dashboard",
+        "description": "see everything in one place — messages, maps, alerts — your control center for dispatching efficiency."
+      },
+      {
+        "id": 2,
+        "title": "Smarter Notifications",
+        "description": "get alerts via Telegram, email, or in-app when loads pop up that match your criteria."
+      },
+      {
+        "id": 3,
+        "title": "Auto-Reply & Templates",
+        "description": "no more typing the same email 100x. Use prebuilt templates & auto responses."
+      },
+      {
+        "id": 4,
+        "title": "LoadBoard Mastery",
+        "description": "drag, hide, pin, resize columns — make the board your own."
+      },
+      {
+        "id": 5,
+        "title": "Real-Time Route Tracking",
+        "description": "map out routes, monitor progress, and update at a glance."
+      },
+      {
+        "id": 6,
+        "title": "Broker Insights",
+        "description": "spot trustworthy brokers with ratings, reviews & feedback built in."
+      },
+      {
+        "id": 7,
+        "title": "Profit Forecasting Tool",
+        "description": "run the numbers fast — fuel, miles, tolls — to see what you actually make."
+      },
+      {
+        "id": 8,
+        "title": "Duplicate & Spam Filter",
+        "description": "weed out the repeats, avoid bogus loads, keep your feed clean."
+      },
+      {
+        "id": 9,
+        "title": "Advanced Search & Filters",
+        "description": "narrow loads by region, weight, distance, rate, and more — find what works for you."
+      },
+      {
+        "id": 10,
+        "title": "Team Mode",
+        "description": "collaborate, assign tasks, track driver schedules — dispatching as a squad."
+      },
+      {
+        "id": 11,
+        "title": "24/7 Support & SLA",
+        "description": "top-tier help for users who demand high reliability."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "subtitle": "Flexible pricing options that scale with your business needs",
+    "plans": [
+      {
+        "id": "starter",
+        "name": "Regular",
+        "price": "$29",
+        "period": "per month",
+        "description": "Perfect for small businesses and startups",
+        "features": [
+          "Up to 10 users",
+          "5GB storage",
+          "Basic analytics",
+          "Email support",
+          "Standard integrations"
+        ],
+        "highlighted": false,
+        "ctaText": "Start Free Trial"
+      },
+      {
+        "id": "professional",
+        "name": "Pro",
+        "price": "$79",
+        "period": "per month",
+        "description": "Ideal for growing teams and businesses",
+        "features": [
+          "Up to 50 users",
+          "100GB storage",
+          "Advanced analytics",
+          "Priority support",
+          "All integrations",
+          "Custom workflows",
+          "API access"
+        ],
+        "highlighted": true,
+        "ctaText": "Get Started"
+      },
+      {
+        "id": "enterprise",
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "pricing",
+        "description": "For large organizations with custom needs",
+        "features": [
+          "Unlimited users",
+          "Unlimited storage",
+          "Enterprise analytics",
+          "24/7 phone support",
+          "Custom integrations",
+          "Advanced security",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
+        "highlighted": false,
+        "ctaText": "Contact Sales"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "position": "CEO, TechStartup Inc.",
+      "company": "TechStartup Inc.",
+      "avatar": "/avatars/sarah.jpg",
+      "content": "This platform has completely transformed how we manage our business operations. The automation features alone have saved us 20+ hours per week.",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "position": "Operations Manager",
+      "company": "Global Solutions Ltd.",
+      "avatar": "/avatars/michael.jpg",
+      "content": "The analytics dashboard gives us insights we never had before. We've improved our efficiency by 40% since implementing this solution.",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Emily Rodriguez",
+      "position": "Marketing Director",
+      "company": "Creative Agency Co.",
+      "avatar": "/avatars/emily.jpg",
+      "content": "Excellent customer support and seamless integrations with all our existing tools. Couldn't be happier with our choice.",
+      "rating": 5
+    }
+  ],
+  "faq": [
+    {
+      "id": 1,
+      "question": "How long does it take to set up?",
+      "answer": "Most customers are up and running within 15 minutes. Our onboarding team will guide you through the entire process."
+    },
+    {
+      "id": 2,
+      "question": "Can I cancel my subscription anytime?",
+      "answer": "Yes, you can cancel your subscription at any time. There are no long-term contracts or cancellation fees."
+    },
+    {
+      "id": 3,
+      "question": "Do you offer data migration services?",
+      "answer": "Yes, we provide free data migration for all Professional and Enterprise plans. Our team will handle the entire process for you."
+    },
+    {
+      "id": 4,
+      "question": "Is my data secure?",
+      "answer": "Absolutely. We use bank-level security with 256-bit SSL encryption and are SOC 2 Type II compliant. Your data is always protected."
+    },
+    {
+      "id": 5,
+      "question": "What integrations do you support?",
+      "answer": "We support over 100+ integrations including Slack, Salesforce, HubSpot, Zapier, and many more. Custom integrations are available for Enterprise plans."
+    }
+  ],
+  "footer": {
+    "company": {
+      "name": "YourBrand",
+      "description": "Empowering businesses with innovative solutions since 2020.",
+      "address": "123 Business Street, Suite 100, City, State 12345",
+      "phone": "+1 (555) 123-4567",
+      "email": "hello@yourbrand.com"
+    },
+    "links": {
+      "product": [
+        { "label": "Features", "href": "/features" },
+        { "label": "Pricing", "href": "/pricing" },
+        { "label": "API Documentation", "href": "/docs" },
+        { "label": "Integrations", "href": "/integrations" }
+      ],
+      "company": [
+        { "label": "About Us", "href": "/about" },
+        { "label": "Careers", "href": "/careers" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Press", "href": "/press" }
+      ],
+      "support": [
+        { "label": "Help Center", "href": "/help" },
+        { "label": "Contact Support", "href": "/support" },
+        { "label": "System Status", "href": "/status" },
+        { "label": "Community", "href": "/community" }
+      ],
+      "legal": [
+        { "label": "Privacy Policy", "href": "/privacy" },
+        { "label": "Terms of Service", "href": "/terms" },
+        { "label": "Cookie Policy", "href": "/cookies" },
+        { "label": "GDPR", "href": "/gdpr" }
+      ]
+    },
+    "social": [
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/yourbrand",
+        "icon": "twitter"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/company/yourbrand",
+        "icon": "linkedin"
+      },
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/yourbrand",
+        "icon": "github"
+      },
+      {
+        "platform": "Discord",
+        "url": "https://discord.gg/yourbrand",
+        "icon": "discord"
+      }
+    ]
+  }
+}
