@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card, Section } from "@/components";
+import { FlipCard, Section } from "@/components";
 import "./features.scss";
 
 const Features = () => {
@@ -24,7 +24,7 @@ const Features = () => {
         <motion.div>
           <div className="features-wrapper">
             {featuresData.map((feature) => (
-              <Card
+              <FlipCard
                 key={feature.title}
                 cardTitle={feature.title}
                 cardDescription={feature.description}

@@ -1,7 +1,7 @@
 "use client";
 
 import Section from "@/components/section/section";
-import { Card } from "@/components";
+import { FlipCard } from "@/components";
 import "./pricing.scss";
 
 const plans = [
@@ -33,7 +33,7 @@ const PricingSection = () => {
         <p className="pricing-subtitle">Pick a plan that fits your needs</p>
         <div className="pricing-flex">
           {plans.map((plan) => (
-            <Card
+            <FlipCard
               key={plan.title}
               cardTitle={plan.title}
               cardDescription={plan.description}

@@ -1,8 +1,12 @@
 import "./hero.scss";
 import { Section, Button, Video } from "@/components";
 import { motion } from "framer-motion";
+import { useHero } from "@/hooks/useContent";
 
-const Hero = () => {
+const HeroSection = () => {
+  const { title, subtitle, description, ctaButton, secondaryButton } =
+    useHero();
+
   return (
     <Section id="hero">
       <motion.div
@@ -12,17 +16,14 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="hero-left">
-          <h1 className="hero-title">Book the best loads with one click</h1>
-          <p className="hero-subtitle">
-            LoadConnect automates freight dispatch, from load board to your
-            email inbox, so it&apos;s simple and fast.
-          </p>
+          <h1 className="hero-title">{title}</h1>
+          <p className="hero-subtitle">{subtitle}</p>
           <div className="hero-actions">
             <Button variant="solid" href="/pricing">
-              Get Started
+              {ctaButton}
             </Button>
             <Button variant="ghost" href="/features">
-              See Features
+              {secondaryButton}
             </Button>
           </div>
         </div>
@@ -40,4 +41,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;

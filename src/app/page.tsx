@@ -1,10 +1,10 @@
 "use client";
 
-import { Hero } from "@/components";
+import { HeroSection } from "@/components";
 import "./main-page.scss";
 
 const MainPage = () => {
-  return <Hero />;
+  return <HeroSection />;
 };
 
 export default MainPage;

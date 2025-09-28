@@ -3,9 +3,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components";
-import "./card.scss";
+import Image from "next/image";
+import "./flip-card.scss";
 
-type CardProps = {
+type FlipCardProps = {
   cardTitle: string;
   cardDescription?: string;
   cardDisclaimer?: string;
@@ -14,19 +15,19 @@ type CardProps = {
   onButtonClick?: () => void;
 };
 
-const Card = ({
+const FlipCard = ({
   cardTitle,
   cardDescription,
   cardDisclaimer,
   cardImage,
   buttonText = "Learn more",
   onButtonClick,
-}: CardProps) => {
+}: FlipCardProps) => {
   const [flipped, setFlipped] = useState(false);
 
   return (
     <div
-      className="card"
+      className="flip-card"
       onClick={() => setFlipped((v) => !v)}
       role="button"
       tabIndex={0}
@@ -36,28 +37,36 @@ const Card = ({
       aria-pressed={flipped}
     >
       <motion.div
-        className="card-3d"
+        className="flip-card-3d"
         initial={false}
         animate={{ rotateY: flipped ? 180 : 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
-        <div className="card-face card-front">
-          {cardImage && <img className="card-image" src={cardImage} alt="" />}
-          <div className="card-content">
-            <h3 className="card-title">{cardTitle}</h3>
-            <p className="card-desc">{cardDescription}</p>
+        <div className="flip-card-face flip-card-front">
+          {cardImage && (
+            <Image
+              className="flip-card-image"
+              src={cardImage}
+              alt=""
+              width={320}
+              height={180}
+            />
+          )}
+          <div className="flip-card-content">
+            <h3 className="flip-card-title">{cardTitle}</h3>
+            <p className="flip-card-desc">{cardDescription}</p>
           </div>
-          <div className="card-actions">
+          <div className="flip-card-actions">
             <Button variant="solid">{buttonText}</Button>
           </div>
         </div>
 
-        <div className="card-face card-back">
-          <div className="card-content">
-            <h4 className="card-title">{cardTitle}</h4>
-            <p className="card-desc">{cardDisclaimer}</p>
+        <div className="flip-card-face flip-card-back">
+          <div className="flip-card-content">
+            <h4 className="flip-card-title">{cardTitle}</h4>
+            <p className="flip-card-desc">{cardDisclaimer}</p>
           </div>
-          <div className="card-actions">
+          <div className="flip-card-actions">
             <Button variant="solid" onClick={onButtonClick}>
               {buttonText}
             </Button>
@@ -68,4 +77,4 @@ const Card = ({
   );
 };
 
-export default Card;
+export default FlipCard;
