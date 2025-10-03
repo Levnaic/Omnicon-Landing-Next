@@ -7,6 +7,7 @@ export const useContent = () => {
 
   return {
     hero: data.hero,
+    whyUsSection: data.whyUsSection,
     features: data.features,
     pricing: data.pricing,
     testimonials: data.testimonials,
@@ -21,11 +22,14 @@ export const useContent = () => {
     getTestimonialById: (id: number) =>
       data.testimonials.find((t) => t.id === id),
     getFAQById: (id: number) => data.faq.find((f) => f.id === id),
+    getWhyUsCardById: (id: string) =>
+      data.whyUsSection.whyUsCards.find((c) => c.id === id),
   };
 };
 
 // You can also export individual sections if you prefer
 export const useHero = () => useContent().hero;
+export const useWhyUs = () => useContent().whyUsSection;
 export const useFeatures = () => useContent().features;
 export const usePricing = () => useContent().pricing;
 export const useTestimonials = () => useContent().testimonials;

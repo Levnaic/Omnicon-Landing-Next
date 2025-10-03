@@ -7,19 +7,19 @@ import Image from "next/image";
 import "./flip-card.scss";
 
 type FlipCardProps = {
-  cardTitle: string;
-  cardDescription?: string;
-  cardDisclaimer?: string;
-  cardImage?: string;
+  flipCardTitle: string;
+  flipCardDescription?: string;
+  flipCardDisclaimer?: string;
+  flipCardImage?: string;
   buttonText?: string;
   onButtonClick?: () => void;
 };
 
 const FlipCard = ({
-  cardTitle,
-  cardDescription,
-  cardDisclaimer,
-  cardImage,
+  flipCardTitle,
+  flipCardDescription,
+  flipCardDisclaimer,
+  flipCardImage,
   buttonText = "Learn more",
   onButtonClick,
 }: FlipCardProps) => {
@@ -43,18 +43,18 @@ const FlipCard = ({
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
         <div className="flip-card-face flip-card-front">
-          {cardImage && (
+          {flipCardImage && (
             <Image
               className="flip-card-image"
-              src={cardImage}
+              src={flipCardImage}
               alt=""
               width={320}
               height={180}
             />
           )}
           <div className="flip-card-content">
-            <h3 className="flip-card-title">{cardTitle}</h3>
-            <p className="flip-card-desc">{cardDescription}</p>
+            <h3 className="flip-card-title">{flipCardTitle}</h3>
+            <p className="flip-card-desc">{flipCardDescription}</p>
           </div>
           <div className="flip-card-actions">
             <Button variant="solid">{buttonText}</Button>
@@ -63,8 +63,8 @@ const FlipCard = ({
 
         <div className="flip-card-face flip-card-back">
           <div className="flip-card-content">
-            <h4 className="flip-card-title">{cardTitle}</h4>
-            <p className="flip-card-desc">{cardDisclaimer}</p>
+            <h4 className="flip-card-title">{flipCardTitle}</h4>
+            <p className="flip-card-desc">{flipCardDisclaimer}</p>
           </div>
           <div className="flip-card-actions">
             <Button variant="solid" onClick={onButtonClick}>

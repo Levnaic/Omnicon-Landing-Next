@@ -6,6 +6,58 @@
     "ctaButton": "Get Started Today",
     "secondaryButton": "Watch Demo"
   },
+
+  "whyUsSection": {
+    "title": "Why trucking companies choose Omnicon",
+    "whyUsCards": [
+      {
+        "id": "1",
+        "title": "24/7 Support",
+        "text": "Get help whenever you need it with our round-the-clock customer support team",
+        "icon": "Headset",
+        "image": "https://picsum.photos/400/300?random=1",
+        "isFeaturedWhyUsCard": true,
+        "isFillWhyUsCard": false
+      },
+      {
+        "id": "2",
+        "title": "Save Time",
+        "text": "Reduce manual work by 80% with automated dispatch processes",
+        "icon": "Clock",
+        "image": null,
+        "isFeaturedWhyUsCard": false,
+        "isFillWhyUsCard": true
+      },
+      {
+        "id": "3",
+        "title": "Increase Revenue",
+        "text": "Access better-paying loads and reduce empty miles",
+        "icon": "DollarSign",
+        "image": null,
+        "isFeaturedWhyUsCard": false,
+        "isFillWhyUsCard": false
+      },
+      {
+        "id": "4",
+        "title": "Real-time Updates",
+        "text": "Get instant notifications for new loads and status changes",
+        "icon": "Zap",
+        "image": null,
+        "isFeaturedWhyUsCard": false,
+        "isFillWhyUsCard": false
+      },
+      {
+        "id": "5",
+        "title": "Secure & Reliable",
+        "text": "Enterprise-grade security and 99.9% uptime guarantee",
+        "icon": "Shield",
+        "image": "https://picsum.photos/400/300?random=2",
+        "isFeaturedWhyUsCard": false,
+        "isFillWhyUsCard": false
+      }
+    ]
+  },
+
   "features": {
     "title": "Powerful Features for Your Business",
     "subtitle": "Everything you need to streamline your operations and boost productivity",

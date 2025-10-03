@@ -1,0 +1,76 @@
+@import "variables";
+
+.why-us-card {
+  position: relative;
+  height: 200px;
+  width: 375px;
+  padding: $spacing-md;
+  border-radius: $border-radius-md;
+  box-shadow: $shadow-md;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid $primary-color;
+
+  // Overlay only when image exists
+  &.why-us-card-with-image {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        to top,
+        rgba($primary-color, 0.8) 0%,
+        rgba($primary-color, 0.4) 30%,
+        rgba($primary-color, 0.1) 60%,
+        transparent 100%
+      );
+      border-radius: $border-radius-md;
+      z-index: 1;
+    }
+
+    .why-us-card-icon,
+    .why-us-card-title,
+    .why-us-card-text {
+      color: white;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  // Position content above the overlay
+  .why-us-card-icon,
+  .why-us-card-title,
+  .why-us-card-text {
+    position: relative;
+    z-index: 2;
+  }
+
+  &-featured {
+    height: 400px;
+  }
+
+  &-fill {
+    background-color: $primary-color;
+
+    .why-us-card-icon,
+    .why-us-card-title,
+    .why-us-card-text {
+      color: white;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  &-title {
+    font-size: $font-size-3xl;
+  }
+
+  &-text {
+    font-size: $font-size-lg;
+  }
+}

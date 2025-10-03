@@ -43,3 +43,6 @@ next-env.d.ts
 # videos and images
 /public/images
 /public/videos
+
+# dev
+/scripts

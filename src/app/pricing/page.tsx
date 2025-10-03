@@ -35,10 +35,10 @@ const PricingSection = () => {
           {plans.map((plan) => (
             <FlipCard
               key={plan.title}
-              cardTitle={plan.title}
-              cardDescription={plan.description}
-              cardDisclaimer={plan.disclaimer}
-              cardImage={plan.image}
+              flipCardTitle={plan.title}
+              flipCardDescription={plan.description}
+              flipCardDisclaimer={plan.disclaimer}
+              flipCardImage={plan.image}
               buttonText="Choose Plan"
               onButtonClick={() => console.log(`Selected ${plan.title}`)}
             />

@@ -56,6 +56,21 @@ export interface Hero {
   secondaryButton: string;
 }
 
+export interface WhyUsCard {
+  id: string;
+  title: string;
+  text: string;
+  icon: string;
+  image?: string;
+  isFeaturedWhyUsCard?: boolean;
+  isFillWhyUsCard?: boolean;
+}
+
+export interface WhyUsSection {
+  title: string;
+  whyUsCards: WhyUsCard[];
+}
+
 export interface Company {
   name: string;
   description: string;
@@ -83,6 +98,7 @@ export interface Pricing {
 
 export interface ContentData {
   hero: Hero;
+  whyUsSection: WhyUsSection;
   features: FeaturesSection;
   pricing: Pricing;
   testimonials: Testimonial[];
