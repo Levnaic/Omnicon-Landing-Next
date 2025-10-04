@@ -1,8 +1,7 @@
 "use client";
 
-import { HeroSection, WhyUsSection } from "@/components";
+import { HeroSection, WhyUsSection, FeaturesSection } from "@/components";
 import "./main-page.scss";
-import FeaturesSection from "@/components/section/features/features";
 
 const MainPage = () => {
   return (

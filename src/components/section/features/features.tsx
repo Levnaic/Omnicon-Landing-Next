@@ -1,8 +1,7 @@
 import "./features.scss";
 import { motion } from "framer-motion";
 import { useFeatures } from "@/hooks/useContent";
-import { Section } from "@/components";
-import { renderIcon } from "@/components/utils/icons";
+import { Section, RenderIcon } from "@/components";
 
 const FeaturesSection = () => {
   const { title, subtitle, featuresList } = useFeatures();
@@ -24,7 +23,7 @@ const FeaturesSection = () => {
                 <article key={feature.id} className="features-item">
                   <div className="features-item-upper-part">
                     <div className="features-item-icon-container">
-                      {renderIcon({
+                      {RenderIcon({
                         iconName: feature.icon,
                         className: "features-item-icon",
                       })}

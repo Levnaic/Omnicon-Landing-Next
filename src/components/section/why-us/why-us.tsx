@@ -1,8 +1,7 @@
 import "./why-us.scss";
-import { Section, WhyUsCard } from "@/components";
+import { Section, WhyUsCard, RenderIcon } from "@/components";
 import { useWhyUs } from "@/hooks/useContent";
 import { motion } from "framer-motion";
-import { renderIcon } from "@/components/utils/icons";
 
 const WhyUsSection = () => {
   const { title, whyUsCards } = useWhyUs();
@@ -23,7 +22,7 @@ const WhyUsSection = () => {
                 key={card.id}
                 whyUsCardTitle={card.title}
                 whyUsCardText={card.text}
-                whyUsCardIcon={renderIcon({
+                whyUsCardIcon={RenderIcon({
                   iconName: card.icon,
                   className: "why-us-card-icon",
                 })}

@@ -66,7 +66,7 @@ interface RenderIconProps {
 /**
  * Renders a Lucide icon dynamically by name.
  */
-export const renderIcon = ({
+const RenderIcon = ({
   iconName,
   className,
 }: RenderIconProps): ReactElement | null => {
@@ -74,3 +74,5 @@ export const renderIcon = ({
   if (!IconComponent) return null;
   return <IconComponent className={className} />;
 };
+
+export default RenderIcon;

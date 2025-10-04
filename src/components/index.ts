@@ -5,10 +5,14 @@ export { default as Navbar } from "@/components/layout/navbar/navbar";
 export { default as Section } from "@/components/section/section";
 export { default as HeroSection } from "@/components/section/hero/hero";
 export { default as WhyUsSection } from "@/components/section/why-us/why-us";
+export { default as FeaturesSection } from "@/components/section/features/features";
 
 // UI
 export { default as Button } from "@/components/ui/button/button";
 export { default as FlipCard } from "@/components/ui/flip-card/flip-card";
 export { default as Tabs } from "@/components/ui/tabs/tabs";
-export { default as Video } from "@/components/utils/video/video";
 export { default as WhyUsCard } from "@/components/ui/why-us-card/why-us-card";
+
+// Utils
+export { default as Video } from "@/components/utils/video/video";
+export { default as RenderIcon } from "@/components/utils/icons";
