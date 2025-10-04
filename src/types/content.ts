@@ -1,3 +1,26 @@
+export interface Hero {
+  title: string;
+  subtitle: string;
+  description: string;
+  ctaButton: string;
+  secondaryButton: string;
+}
+
+export interface WhyUsCard {
+  id: string;
+  title: string;
+  text: string;
+  icon: string;
+  image?: string;
+  isFeaturedWhyUsCard?: boolean;
+  isFillWhyUsCard?: boolean;
+}
+
+export interface WhyUsSection {
+  title: string;
+  whyUsCards: WhyUsCard[];
+}
+
 export interface Feature {
   id: number;
   title: string;
@@ -46,29 +69,6 @@ export interface SocialLink {
   platform: string;
   url: string;
   icon: string;
-}
-
-export interface Hero {
-  title: string;
-  subtitle: string;
-  description: string;
-  ctaButton: string;
-  secondaryButton: string;
-}
-
-export interface WhyUsCard {
-  id: string;
-  title: string;
-  text: string;
-  icon: string;
-  image?: string;
-  isFeaturedWhyUsCard?: boolean;
-  isFillWhyUsCard?: boolean;
-}
-
-export interface WhyUsSection {
-  title: string;
-  whyUsCards: WhyUsCard[];
 }
 
 export interface Company {

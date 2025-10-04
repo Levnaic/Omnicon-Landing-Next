@@ -1,35 +1,8 @@
 import "./why-us.scss";
 import { Section, WhyUsCard } from "@/components";
 import { useWhyUs } from "@/hooks/useContent";
-import {
-  Headset,
-  Heart,
-  Clock,
-  DollarSign,
-  Zap,
-  Shield,
-  Truck,
-  MapPin,
-  Users,
-  BarChart3,
-  Tally5,
-} from "lucide-react";
 import { motion } from "framer-motion";
-
-// Create icon map in the component
-const iconMap = {
-  Headset,
-  Heart,
-  Clock,
-  DollarSign,
-  Zap,
-  Shield,
-  Truck,
-  MapPin,
-  Users,
-  BarChart3,
-  Tally5,
-};
+import { renderIcon } from "@/components/utils/icons";
 
 const WhyUsSection = () => {
   const { title, whyUsCards } = useWhyUs();
@@ -45,14 +18,15 @@ const WhyUsSection = () => {
         <h2 className="why-us-title">{title}</h2>
         <div className="why-us-grid">
           {whyUsCards.map((card) => {
-            const IconComponent = iconMap[card.icon as keyof typeof iconMap];
-
             return (
               <WhyUsCard
                 key={card.id}
                 whyUsCardTitle={card.title}
                 whyUsCardText={card.text}
-                whyUsCardIcon={IconComponent ? <IconComponent /> : null}
+                whyUsCardIcon={renderIcon({
+                  iconName: card.icon,
+                  className: "why-us-card-icon",
+                })}
                 whyUsCardImage={card.image}
                 isFeaturedWhyUsCard={card.isFeaturedWhyUsCard}
                 isFillWhyUsCard={card.isFillWhyUsCard}
