@@ -1,23 +1,26 @@
-@import "variables";
+@use "variables" as v;
+@use "mixins" as m;
 
 .why-us {
-  margin: $spacing-4xl 0;
-  padding: 0 $spacing-4xl;
+  @include m.section-spacing;
 
   &-title {
     text-align: center;
-    font-size: $font-size-3xl;
-    margin-bottom: $spacing-3xl;
+    font-size: v.$font-size-3xl;
+    margin-bottom: v.$spacing-3xl;
   }
 
   &-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    grid-column-gap: 0px;
-    grid-row-gap: 30px;
+    gap: 30px; // Combined gap property
+    justify-content: space-between;
+    // justify-content: space-between; // This works if columns are auto
+
+    // align-items: center;
+    // grid-column-gap: 0px;
+    // grid-row-gap: 30px;
 
     & > :first-child {
       grid-area: 1/1/3/2;

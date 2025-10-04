@@ -1,8 +1,8 @@
-@import "variables";
+@use "variables" as v;
+@use "mixins" as m;
 
 .hero {
-  margin: $spacing-3xl 0;
-  padding: 0 $spacing-4xl;
+  @include m.section-spacing;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -27,13 +27,13 @@
   }
 
   &-subtitle {
-    color: $text-secondary;
+    color: v.$text-secondary;
     font-size: 18px;
     margin: 16px 0 32px;
   }
 
   &-right {
-    padding: $spacing-2xl;
+    padding: v.$spacing-2xl 0 v.$spacing-2xl v.$spacing-2xl;
     display: flex;
     justify-content: flex-end;
   }
@@ -49,9 +49,9 @@
 }
 
 // Responsive breakpoints
-@media (max-width: $breakpoint-desktop) {
+@media (max-width: v.$breakpoint-desktop) {
   .hero {
-    padding: 0 $spacing-3xl;
+    padding: 0 v.$spacing-3xl;
 
     &-video {
       max-width: 500px;
@@ -59,19 +59,19 @@
   }
 }
 
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: v.$breakpoint-tablet) {
   .hero {
     flex-direction: column;
     text-align: center;
     gap: 3rem;
-    padding: 0 $spacing-2xl;
+    padding: 0 v.$spacing-2xl;
 
     & > * {
       width: 100%;
     }
 
     &-right {
-      padding: $spacing-xl 0;
+      padding: v.$spacing-xl 0;
       order: -1; // Move video above text on mobile if desired
     }
 
@@ -81,10 +81,10 @@
   }
 }
 
-@media (max-width: $breakpoint-mobile) {
+@media (max-width: v.$breakpoint-mobile) {
   .hero {
-    padding: 0 $spacing-lg;
-    margin: $spacing-2xl 0;
+    padding: 0 v.$spacing-lg;
+    margin: v.$spacing-2xl 0;
 
     &-video {
       max-width: 320px;

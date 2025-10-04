@@ -1,19 +1,19 @@
-@import "variables";
+@use "variables" as v;
 
 .why-us-card {
   position: relative;
   height: 200px;
   width: 375px;
-  padding: $spacing-md;
-  border-radius: $border-radius-md;
-  box-shadow: $shadow-md;
+  padding: v.$spacing-md;
+  border-radius: v.$border-radius-md;
+  box-shadow: v.$shadow-md;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid $primary-color;
+  border: 1px solid v.$primary-color;
 
   // Overlay only when image exists
   &.why-us-card-with-image {
@@ -26,12 +26,12 @@
       bottom: 0;
       background: linear-gradient(
         to top,
-        rgba($primary-color, 0.8) 0%,
-        rgba($primary-color, 0.4) 30%,
-        rgba($primary-color, 0.1) 60%,
+        rgba(v.$primary-color, 0.8) 0%,
+        rgba(v.$primary-color, 0.4) 30%,
+        rgba(v.$primary-color, 0.1) 60%,
         transparent 100%
       );
-      border-radius: $border-radius-md;
+      border-radius: v.$border-radius-md;
       z-index: 1;
     }
 
@@ -52,11 +52,11 @@
   }
 
   &-featured {
-    height: 400px;
+    height: 430px;
   }
 
   &-fill {
-    background-color: $primary-color;
+    background-color: v.$primary-color;
 
     .why-us-card-icon,
     .why-us-card-title,
@@ -67,10 +67,10 @@
   }
 
   &-title {
-    font-size: $font-size-3xl;
+    font-size: v.$font-size-3xl;
   }
 
   &-text {
-    font-size: $font-size-lg;
+    font-size: v.$font-size-lg;
   }
 }

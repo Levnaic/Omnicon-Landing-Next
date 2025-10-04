@@ -1,0 +1,6 @@
+@use "variables" as v;
+
+@mixin section-spacing {
+  margin: v.$spacing-3xl 0;
+  padding: 0 v.$spacing-4xl;
+}

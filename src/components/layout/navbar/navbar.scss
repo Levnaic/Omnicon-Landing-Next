@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables" as v;
 
 .nav {
   margin-top: 20px;
@@ -8,16 +8,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: $spacing-2xl;
+  gap: v.$spacing-2xl;
 }
 
 .nav-tabs {
   display: flex;
-  gap: $spacing-sm;
-  background: rgba($black, 0.04);
-  border-radius: $border-radius-md;
+  gap: v.$spacing-sm;
+  background: rgba(v.$black, 0.04);
+  border-radius: v.$border-radius-md;
   padding: 6px;
-  border: 1px solid $border-light;
+  border: 1px solid v.$border-light;
   font-family: inherit;
   font-size: inherit;
 }
@@ -27,28 +27,28 @@
   position: relative;
   appearance: none;
   background: transparent;
-  padding: $spacing-sm $spacing-md;
-  border-radius: $border-radius-sm;
-  font-weight: $font-weight-semibold;
-  font-size: $font-size-xl;
-  color: $text-light;
+  padding: v.$spacing-sm v.$spacing-md;
+  border-radius: v.$border-radius-sm;
+  font-weight: v.$font-weight-semibold;
+  font-size: v.$font-size-xl;
+  color: v.$text-light;
   cursor: pointer;
   outline: none;
 
   border: 1px solid transparent;
-  transition: background $transition-fast, border-color $transition-fast,
-    color $transition-fast, box-shadow $transition-fast;
+  transition: background v.$transition-fast, border-color v.$transition-fast,
+    color v.$transition-fast, box-shadow v.$transition-fast;
 
   &.is-active {
-    color: $text-primary;
+    color: v.$text-primary;
     border-color: transparent;
   }
 
   &:hover {
-    border-color: $primary-color;
-    background: rgba($primary-color, 0.08);
-    color: $text-primary;
-    box-shadow: $shadow-focus;
+    border-color: v.$primary-color;
+    background: rgba(v.$primary-color, 0.08);
+    color: v.$text-primary;
+    box-shadow: v.$shadow-focus;
   }
 }
 
@@ -56,7 +56,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: $bg-tag;
-  border-radius: $border-radius-sm;
-  box-shadow: inset 0 0 0 1px rgba($primary-color, 0.3);
+  background: v.$bg-tag;
+  border-radius: v.$border-radius-sm;
+  box-shadow: inset 0 0 0 1px rgba(v.$primary-color, 0.3);
 }
