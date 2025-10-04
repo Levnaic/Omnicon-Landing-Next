@@ -1,0 +1,40 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.features {
+  @include m.section-spacing;
+
+  &-title {
+    margin-top: v.$spacing-4xl;
+    text-align: center;
+  }
+
+  &-subtitile {
+    margin: v.$spacing-2xl 0;
+  }
+
+  &-presentation {
+    display: flex;
+    & > * {
+      width: 50%;
+    }
+  }
+
+  &-select {
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacing-2xl;
+  }
+
+  &-item {
+    border: 1px solid v.$primary-color;
+    border-radius: v.$border-radius-md;
+    padding: v.$spacing-sm;
+  }
+
+  &-video {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+  }
+}

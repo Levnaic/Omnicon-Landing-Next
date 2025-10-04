@@ -65,57 +65,68 @@
       {
         "id": 1,
         "title": "Unified Dashboard",
-        "description": "see everything in one place — messages, maps, alerts — your control center for dispatching efficiency."
+        "description": "see everything in one place — messages, maps, alerts — your control center for dispatching efficiency.",
+        "icon": "Shield"
       },
       {
         "id": 2,
         "title": "Smarter Notifications",
-        "description": "get alerts via Telegram, email, or in-app when loads pop up that match your criteria."
+        "description": "get alerts via Telegram, email, or in-app when loads pop up that match your criteria.",
+        "icon": "Clock"
       },
       {
         "id": 3,
         "title": "Auto-Reply & Templates",
-        "description": "no more typing the same email 100x. Use prebuilt templates & auto responses."
+        "description": "no more typing the same email 100x. Use prebuilt templates & auto responses.",
+        "icon": "Clock"
       },
       {
         "id": 4,
         "title": "LoadBoard Mastery",
-        "description": "drag, hide, pin, resize columns — make the board your own."
+        "description": "drag, hide, pin, resize columns — make the board your own.",
+        "icon": "Clock"
       },
       {
         "id": 5,
         "title": "Real-Time Route Tracking",
-        "description": "map out routes, monitor progress, and update at a glance."
+        "description": "map out routes, monitor progress, and update at a glance.",
+        "icon": "Clock"
       },
       {
         "id": 6,
         "title": "Broker Insights",
-        "description": "spot trustworthy brokers with ratings, reviews & feedback built in."
+        "description": "spot trustworthy brokers with ratings, reviews & feedback built in.",
+        "icon": "Clock"
       },
       {
         "id": 7,
         "title": "Profit Forecasting Tool",
-        "description": "run the numbers fast — fuel, miles, tolls — to see what you actually make."
+        "description": "run the numbers fast — fuel, miles, tolls — to see what you actually make.",
+        "icon": "Clock"
       },
       {
         "id": 8,
         "title": "Duplicate & Spam Filter",
-        "description": "weed out the repeats, avoid bogus loads, keep your feed clean."
+        "description": "weed out the repeats, avoid bogus loads, keep your feed clean.",
+        "icon": "Clock"
       },
       {
         "id": 9,
         "title": "Advanced Search & Filters",
-        "description": "narrow loads by region, weight, distance, rate, and more — find what works for you."
+        "description": "narrow loads by region, weight, distance, rate, and more — find what works for you.",
+        "icon": "Clock"
       },
       {
         "id": 10,
         "title": "Team Mode",
-        "description": "collaborate, assign tasks, track driver schedules — dispatching as a squad."
+        "description": "collaborate, assign tasks, track driver schedules — dispatching as a squad.",
+        "icon": "Clock"
       },
       {
         "id": 11,
         "title": "24/7 Support & SLA",
-        "description": "top-tier help for users who demand high reliability."
+        "description": "top-tier help for users who demand high reliability.",
+        "icon": "Clock"
       }
     ]
   },
