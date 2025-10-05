@@ -2,8 +2,8 @@
 
 export interface VideoProps {
   src: string;
-  width?: number;
-  height?: number;
+  width: number;
+  height: number;
   autoPlay?: boolean;
   muted?: boolean;
   loop?: boolean;
