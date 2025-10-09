@@ -1,6 +1,6 @@
 @use "variables" as v;
 
-.why-us-card {
+.icon-card {
   position: relative;
   height: 200px;
   width: 375px;
@@ -16,7 +16,7 @@
   border: 1px solid v.$primary-color;
 
   // Overlay only when image exists
-  &.why-us-card-with-image {
+  &.icon-card-with-image {
     &::before {
       content: "";
       position: absolute;
@@ -35,18 +35,18 @@
       z-index: 1;
     }
 
-    .why-us-card-icon,
-    .why-us-card-title,
-    .why-us-card-text {
+    .icon-card-icon,
+    .icon-card-title,
+    .icon-card-text {
       color: white;
       text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
     }
   }
 
   // Position content above the overlay
-  .why-us-card-icon,
-  .why-us-card-title,
-  .why-us-card-text {
+  .icon-card-icon,
+  .icon-card-title,
+  .icon-card-text {
     position: relative;
     z-index: 2;
   }
@@ -58,9 +58,9 @@
   &-fill {
     background-color: v.$primary-color;
 
-    .why-us-card-icon,
-    .why-us-card-title,
-    .why-us-card-text {
+    .icon-card-icon,
+    .icon-card-title,
+    .icon-card-text {
       color: white;
       text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
     }

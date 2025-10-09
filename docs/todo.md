@@ -5,6 +5,7 @@
 -featuri prikazani
 -pricing
 -faq
+-pricing sa loadhuntera
 
 -stranice
 

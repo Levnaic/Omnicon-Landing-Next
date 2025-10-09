@@ -1,5 +1,5 @@
 import "./why-us.scss";
-import { Section, WhyUsCard, RenderIcon } from "@/components";
+import { Section, IconCard, RenderIcon } from "@/components";
 import { useWhyUs } from "@/hooks/useContent";
 import { motion } from "framer-motion";
 
@@ -18,17 +18,17 @@ const WhyUsSection = () => {
         <div className="why-us-grid">
           {whyUsCards.map((card) => {
             return (
-              <WhyUsCard
+              <IconCard
                 key={card.id}
-                whyUsCardTitle={card.title}
-                whyUsCardText={card.text}
-                whyUsCardIcon={RenderIcon({
+                IconCardTitle={card.title}
+                IconCardText={card.text}
+                IconCardIcon={RenderIcon({
                   iconName: card.icon,
-                  className: "why-us-card-icon",
+                  className: "icon-card-icon",
                 })}
-                whyUsCardImage={card.image}
-                isFeaturedWhyUsCard={card.isFeaturedWhyUsCard}
-                isFillWhyUsCard={card.isFillWhyUsCard}
+                IconCardImage={card.image}
+                isFeaturedIconCard={card.isFeaturedWhyUsCard}
+                isFillIconCard={card.isFillWhyUsCard}
               />
             );
           })}

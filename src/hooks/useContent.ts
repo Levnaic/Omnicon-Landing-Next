@@ -17,8 +17,6 @@ export const useContent = () => {
     // Helper functions
     getFeatureById: (id: number) =>
       data.features.featuresList.find((f) => f.id === id),
-    getPricingPlanById: (id: string) =>
-      data.pricing.plans.find((p) => p.id === id),
     getTestimonialById: (id: number) =>
       data.testimonials.find((t) => t.id === id),
     getFAQById: (id: number) => data.faq.find((f) => f.id === id),

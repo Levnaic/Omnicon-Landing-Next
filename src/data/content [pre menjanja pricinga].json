@@ -114,53 +114,61 @@
     ]
   },
   "pricing": {
-    "title": "Simple, Transparent Pricing",
-    "subtitle": "Choose the perfect plan for your team. All plans include core features with discounts for larger teams.",
-    "packages": [
+    "title": "Choose Your Plan",
+    "subtitle": "Flexible pricing options that scale with your business needs",
+    "plans": [
       {
         "id": "starter",
-        "title": "Starter",
-        "description": "Perfect for small teams getting started",
-        "icon": "rocket",
-        "price": 99,
+        "name": "Regular",
+        "price": "$29",
+        "period": "per month",
+        "description": "Perfect for small businesses and startups",
         "features": [
-          "Up to 5 users",
-          "10 projects",
+          "Up to 10 users",
           "5GB storage",
           "Basic analytics",
-          "Email support"
-        ]
+          "Email support",
+          "Standard integrations"
+        ],
+        "highlighted": false,
+        "ctaText": "Start Free Trial"
       },
       {
         "id": "professional",
-        "title": "Professional",
-        "description": "Advanced features for growing teams",
-        "icon": "star",
-        "price": 199,
+        "name": "Pro",
+        "price": "$79",
+        "period": "per month",
+        "description": "Ideal for growing teams and businesses",
         "features": [
-          "Up to 20 users",
-          "Unlimited projects",
-          "50GB storage",
+          "Up to 50 users",
+          "100GB storage",
           "Advanced analytics",
           "Priority support",
+          "All integrations",
+          "Custom workflows",
           "API access"
-        ]
+        ],
+        "highlighted": true,
+        "ctaText": "Get Started"
       },
       {
         "id": "enterprise",
-        "title": "Enterprise",
-        "description": "Full suite for large organizations",
-        "icon": "crown",
-        "price": 399,
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "pricing",
+        "description": "For large organizations with custom needs",
         "features": [
           "Unlimited users",
-          "Unlimited projects",
-          "1TB storage",
-          "Custom analytics",
-          "24/7 dedicated support",
-          "Full API access",
-          "Custom integrations"
-        ]
+          "Unlimited storage",
+          "Enterprise analytics",
+          "24/7 phone support",
+          "Custom integrations",
+          "Advanced security",
+          "Dedicated account manager",
+          "SLA guarantee"
+        ],
+        "highlighted": false,
+        "ctaText": "Contact Sales"
       }
     ]
   },

@@ -35,6 +35,22 @@ export interface FeaturesSection {
   featuresList: Feature[];
 }
 
+export interface PricingPackage {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  price: number;
+  features: string[];
+}
+
+export interface PricingSection {
+  title: string;
+  subtitle: string;
+  packages: PricingPackage[];
+}
+
+// ! stari pricing
 export interface PricingPlan {
   id: string;
   name: string;
@@ -45,6 +61,13 @@ export interface PricingPlan {
   highlighted: boolean;
   ctaText: string;
 }
+
+export interface Pricing {
+  title: string;
+  subtitle: string;
+  plans: PricingPlan[];
+}
+// ! kraj starog pricinga
 
 export interface Testimonial {
   id: number;
@@ -92,17 +115,11 @@ export interface Footer {
   social: SocialLink[];
 }
 
-export interface Pricing {
-  title: string;
-  subtitle: string;
-  plans: PricingPlan[];
-}
-
 export interface ContentData {
   hero: Hero;
   whyUsSection: WhyUsSection;
   features: FeaturesSection;
-  pricing: Pricing;
+  pricing: PricingSection;
   testimonials: Testimonial[];
   faq: FAQ[];
   footer: Footer;

@@ -1,6 +1,11 @@
 "use client";
 
-import { HeroSection, WhyUsSection, FeaturesSection } from "@/components";
+import {
+  HeroSection,
+  WhyUsSection,
+  FeaturesSection,
+  PricingSection,
+} from "@/components";
 import "./main-page.scss";
 
 const MainPage = () => {
@@ -9,6 +14,7 @@ const MainPage = () => {
       <HeroSection />
       <WhyUsSection />
       <FeaturesSection />
+      <PricingSection />
     </main>
   );
 };

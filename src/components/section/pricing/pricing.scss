@@ -1,0 +1,297 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.pricing {
+  @include m.section-spacing;
+
+  &-title {
+    margin-top: v.$spacing-4xl;
+    text-align: center;
+    font-size: v.$font-size-4xl;
+    font-weight: v.$font-weight-bold;
+    color: v.$text-primary;
+    line-height: v.$line-height-tight;
+    letter-spacing: v.$letter-spacing-tight;
+  }
+
+  &-subtitle {
+    margin: v.$spacing-2xl 0;
+    text-align: center;
+    font-size: v.$font-size-lg;
+    color: v.$text-secondary;
+    line-height: v.$line-height-base;
+  }
+
+  &-slider-container {
+    background: v.$white;
+    border: 1px solid v.$border-color;
+    border-radius: v.$border-radius-md;
+    padding: v.$spacing-xl;
+    margin: v.$spacing-3xl 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: v.$shadow-sm;
+  }
+
+  &-slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: v.$spacing-md;
+  }
+
+  &-slider-label {
+    font-weight: v.$font-weight-semibold;
+    color: v.$text-primary;
+    font-size: v.$font-size-base;
+  }
+
+  &-slider-value {
+    font-weight: v.$font-weight-semibold;
+    color: v.$primary-color;
+    font-size: v.$font-size-base;
+  }
+
+  &-discount-badge {
+    background: v.$primary-color;
+    color: v.$white;
+    padding: v.$spacing-xs v.$spacing-sm;
+    border-radius: v.$border-radius-sm;
+    font-size: v.$font-size-xs;
+    font-weight: v.$font-weight-semibold;
+  }
+
+  &-slider {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: v.$border-color;
+    outline: none;
+    transition: v.$transition-fast;
+
+    &:focus {
+      box-shadow: v.$shadow-focus;
+    }
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: v.$primary-color;
+      cursor: pointer;
+      transition: v.$transition-fast;
+
+      &:hover {
+        background: v.$primary-hover;
+      }
+    }
+
+    &::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: v.$primary-color;
+      cursor: pointer;
+      border: none;
+      transition: v.$transition-fast;
+
+      &:hover {
+        background: v.$primary-hover;
+      }
+    }
+  }
+
+  &-slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: v.$spacing-sm;
+    font-size: v.$font-size-xs;
+    color: v.$text-secondary;
+  }
+
+  &-packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: v.$spacing-2xl;
+    margin-top: v.$spacing-3xl;
+
+    @media (max-width: v.$breakpoint-tablet) {
+      grid-template-columns: 1fr;
+      gap: v.$spacing-xl;
+    }
+  }
+
+  &-package {
+    background: v.$bg-card-light;
+    border: 1px solid v.$border-light;
+    border-radius: v.$border-radius-md;
+    padding: v.$spacing-xl;
+    display: flex;
+    flex-direction: column;
+    transition: all v.$transition-fast;
+    box-shadow: v.$shadow-sm;
+
+    &:hover {
+      border-color: v.$primary-color;
+      box-shadow: v.$shadow-md;
+      transform: translateY(-2px);
+    }
+  }
+
+  &-package-header {
+    text-align: center;
+    margin-bottom: v.$spacing-xl;
+  }
+
+  &-package-icon-container {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto v.$spacing-md;
+    background: v.$bg-tag;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-package-icon {
+    width: 30px;
+    height: 30px;
+    color: v.$primary-color;
+  }
+
+  &-package-title {
+    font-size: v.$font-size-2xl;
+    font-weight: v.$font-weight-bold;
+    margin-bottom: v.$spacing-sm;
+    color: v.$text-primary;
+  }
+
+  &-package-description {
+    color: v.$text-secondary;
+    line-height: v.$line-height-base;
+    font-size: v.$font-size-base;
+  }
+
+  &-package-content {
+    flex: 1;
+    margin-bottom: v.$spacing-xl;
+  }
+
+  &-feature {
+    display: flex;
+    align-items: center;
+    gap: v.$spacing-sm;
+    margin-bottom: v.$spacing-md;
+    font-size: v.$font-size-sm;
+    color: v.$text-primary;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-feature-icon {
+    width: 16px;
+    height: 16px;
+    color: v.$primary-color;
+    flex-shrink: 0;
+  }
+
+  &-package-footer {
+    text-align: center;
+  }
+
+  &-price {
+    margin-bottom: v.$spacing-sm;
+  }
+
+  &-price-amount {
+    font-size: v.$font-size-3xl;
+    font-weight: v.$font-weight-bold;
+    color: v.$primary-color;
+    line-height: v.$line-height-tight;
+  }
+
+  &-price-period {
+    color: v.$text-secondary;
+    font-size: v.$font-size-base;
+  }
+
+  &-per-user {
+    font-size: v.$font-size-sm;
+    color: v.$text-secondary;
+    margin-bottom: v.$spacing-lg;
+  }
+
+  &-cta-button {
+    width: 100%;
+    background: v.$primary-color;
+    color: v.$white;
+    border: none;
+    padding: v.$spacing-md v.$spacing-lg;
+    border-radius: v.$border-radius-sm;
+    font-weight: v.$font-weight-semibold;
+    font-size: v.$font-size-base;
+    cursor: pointer;
+    transition: background-color v.$transition-fast;
+
+    &:hover {
+      background: v.$primary-hover;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: v.$shadow-focus;
+    }
+  }
+}
+
+// // Dark mode support
+// @media (prefers-color-scheme: dark) {
+//   .pricing {
+//     &-title {
+//       color: v.$text-dark-primary;
+//     }
+
+//     &-subtitle {
+//       color: v.$text-dark-secondary;
+//     }
+
+//     &-slider-container {
+//       background: v.$bg-card-dark;
+//       border-color: v.$border-dark;
+//     }
+
+//     &-slider-label {
+//       color: v.$text-dark-primary;
+//     }
+
+//     &-package {
+//       background: v.$bg-card-dark;
+//       border-color: v.$border-dark;
+//     }
+
+//     &-package-title {
+//       color: v.$text-dark-primary;
+//     }
+
+//     &-package-description {
+//       color: v.$text-dark-secondary;
+//     }
+
+//     &-feature {
+//       color: v.$text-dark-primary;
+//     }
+
+//     &-price-period {
+//       color: v.$text-dark-secondary;
+//     }
+
+//     &-per-user {
+//       color: v.$text-dark-secondary;
+//     }
+//   }
+// }
