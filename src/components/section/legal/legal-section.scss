@@ -1,3 +1,15 @@
+// legal-section.scss
 .legal-section-content {
-  white-space: pre-line; // This will respect \n and convert to <br>
+  white-space: pre-line;
+  line-height: 1.6;
+
+  .legal-link {
+    color: #4a70a9; // Your primary color
+    text-decoration: underline;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #3a5a8c; // Your primary hover color
+    }
+  }
 }
