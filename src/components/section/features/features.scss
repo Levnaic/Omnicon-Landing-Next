@@ -11,31 +11,107 @@
 
   &-subtitile {
     margin: v.$spacing-2xl 0;
+    text-align: center;
   }
 
   &-presentation {
     display: flex;
+    gap: v.$spacing-2xl;
+    align-items: flex-start;
+    height: 500px; // Set a fixed height for the container
+
     & > * {
-      width: 50%;
+      flex: 1;
     }
   }
 
   &-select {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: v.$spacing-2xl;
+    gap: v.$spacing-xl;
+    padding: v.$spacing-2xl 0;
+    height: 100%; // Take full height of parent
+    overflow-y: auto; // Enable vertical scrolling
+    scrollbar-width: thin; // For Firefox
+    scrollbar-color: v.$primary-color transparent; // For Firefox
+
+    // Container style border
+    border: 1px solid v.$border-color;
+    border-radius: v.$border-radius-lg;
+    background-color: rgba(v.$primary-color, 0.02);
+
+    // Prevent page scrolling when cursor is over this element
+    overscroll-behavior: contain;
+
+    // Webkit scrollbar styling
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: v.$primary-color;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: v.$border-color;
+    }
   }
 
   &-item {
+    width: 70%;
     border: 1px solid v.$primary-color;
     border-radius: v.$border-radius-md;
-    padding: v.$spacing-sm;
+    padding: v.$spacing-lg;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0; // Prevent items from shrinking
+
+    &:hover {
+      background-color: rgba(v.$primary-color, 0.05);
+    }
+
+    &-active {
+      background-color: rgba(v.$primary-color, 0.1);
+      border-color: v.$border-color;
+      transform: translateX(v.$spacing-xs);
+    }
+  }
+
+  &-item-upper-part {
+    display: flex;
+    align-items: center;
+    gap: v.$spacing-md;
+    margin-bottom: v.$spacing-sm;
+  }
+
+  &-item-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: v.$spacing-xl;
+    border-left: 1px solid v.$border-color;
+    height: 100%; // Take full height
   }
 
   &-video {
-    width: 350px;
-    height: 350px;
-    // background-color: green;
-    border: 1px solid black;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: v.$border-radius-lg;
+    border: 1px solid v.$border-color;
   }
 }
