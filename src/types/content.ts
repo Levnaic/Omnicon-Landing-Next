@@ -50,35 +50,6 @@ export interface PricingSection {
   packages: PricingPackage[];
 }
 
-// ! stari pricing
-export interface PricingPlan {
-  id: string;
-  name: string;
-  price: string;
-  period: string;
-  description: string;
-  features: string[];
-  highlighted: boolean;
-  ctaText: string;
-}
-
-export interface Pricing {
-  title: string;
-  subtitle: string;
-  plans: PricingPlan[];
-}
-// ! kraj starog pricinga
-
-export interface Testimonial {
-  id: number;
-  name: string;
-  position: string;
-  company: string;
-  avatar: string;
-  content: string;
-  rating: number;
-}
-
 export interface FAQ {
   id: number;
   question: string;
@@ -98,10 +69,13 @@ export interface SocialLink {
 
 export interface Company {
   name: string;
-  description: string;
+  fullName: string;
+  city: string;
   address: string;
   phone: string;
   email: string;
+  supportEmail: string;
+  copyright: string;
 }
 
 export interface Footer {
@@ -115,12 +89,22 @@ export interface Footer {
   social: SocialLink[];
 }
 
+export interface LegalSection {
+  title: string;
+  content: string;
+}
+
+export interface Legal {
+  terms: LegalSection[];
+  privacy: LegalSection[];
+}
+
 export interface ContentData {
   hero: Hero;
   whyUsSection: WhyUsSection;
   features: FeaturesSection;
   pricing: PricingSection;
-  testimonials: Testimonial[];
   faq: FAQ[];
   footer: Footer;
+  legal: Legal;
 }

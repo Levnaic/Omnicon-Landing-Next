@@ -26,9 +26,9 @@ const Features = () => {
             {featuresData.map((feature) => (
               <FlipCard
                 key={feature.title}
-                cardTitle={feature.title}
-                cardDescription={feature.description}
-                cardImage={feature.image}
+                flipCardTitle={feature.title}
+                flipCardDescription={feature.description}
+                flipCardImage={feature.image}
               />
             ))}
           </div>

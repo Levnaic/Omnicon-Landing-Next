@@ -1,0 +1,15 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.legal {
+  &-contianer {
+    @include m.section-spacing;
+    font-family: v.$font-family-base;
+    color: v.$text-primary;
+  }
+
+  &-title {
+    padding: 15px;
+    text-align: center;
+  }
+}

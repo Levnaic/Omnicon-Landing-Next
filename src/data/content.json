@@ -164,35 +164,7 @@
       }
     ]
   },
-  "testimonials": [
-    {
-      "id": 1,
-      "name": "Sarah Johnson",
-      "position": "CEO, TechStartup Inc.",
-      "company": "TechStartup Inc.",
-      "avatar": "/avatars/sarah.jpg",
-      "content": "This platform has completely transformed how we manage our business operations. The automation features alone have saved us 20+ hours per week.",
-      "rating": 5
-    },
-    {
-      "id": 2,
-      "name": "Michael Chen",
-      "position": "Operations Manager",
-      "company": "Global Solutions Ltd.",
-      "avatar": "/avatars/michael.jpg",
-      "content": "The analytics dashboard gives us insights we never had before. We've improved our efficiency by 40% since implementing this solution.",
-      "rating": 5
-    },
-    {
-      "id": 3,
-      "name": "Emily Rodriguez",
-      "position": "Marketing Director",
-      "company": "Creative Agency Co.",
-      "avatar": "/avatars/emily.jpg",
-      "content": "Excellent customer support and seamless integrations with all our existing tools. Couldn't be happier with our choice.",
-      "rating": 5
-    }
-  ],
+
   "faq": [
     {
       "id": 1,
@@ -222,11 +194,14 @@
   ],
   "footer": {
     "company": {
-      "name": "YourBrand",
-      "description": "Empowering businesses with innovative solutions since 2020.",
-      "address": "123 Business Street, Suite 100, City, State 12345",
+      "name": "ApexLogic Global Solutions",
+      "fullName": "ApexLogic Global Solutions LLC",
+      "city": "Sheridan, Whyoming 82801",
+      "address": "30 North Gould Street Suite R",
       "phone": "+1 (555) 123-4567",
-      "email": "hello@yourbrand.com"
+      "email": "hello@yourbrand.com",
+      "supportEmail": "support@email.email",
+      "copyright": "Copyright: © 2025 DDS E Commerce LLC - All Rights Reserved."
     },
     "links": {
       "product": [
@@ -274,6 +249,109 @@
         "platform": "Discord",
         "url": "https://discord.gg/yourbrand",
         "icon": "discord"
+      }
+    ]
+  },
+
+  "legal": {
+    "terms": [
+      {
+        "title": "Terms and Conditions",
+        "content": "Welcome to https://apexlogicsglobalsolutions.com! These terms and conditions outline the rules and regulations for the use of Apex Logics Global Solutions LLCs Website, located at https://apexlogicsglobalsolutions.com. By accessing this website we assume you accept these terms and conditions. Do not continue to use https://apexlogicsglobalsolutions.com if you do not agree to take all of the terms and conditions stated on this page. The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: 'Client', 'You' and 'Your' refers to you, the person log on this website and compliant to the Company's terms and conditions. 'The Company', 'Ourselves', 'We', 'Our' and 'Us', refers to our Company. 'Party', 'Parties', or 'Us', refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of us. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same."
+      },
+      {
+        "title": "Cookies",
+        "content": "We employ the use of cookies. By accessing https://apexlogicsglobalsolutions.com you agreed to use cookies in agreement with the Apex Logics Global Solutions LLCs Privacy Policy. Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies."
+      },
+      {
+        "title": "License",
+        "content": "Unless otherwise stated, Apex Logics Global Solutions LLC and/or its licensors own the intellectual property rights for all material on https://apexlogicsglobalsolutions.com. All intellectual property rights are reserved. You may access this from https://apexlogicsglobalsolutions.com for your own personal use subjected to restrictions set in these terms and conditions. You must not: \n • Republish material from https://apexlogicsglobalsolutions.com \n • Sell, rent or sub-license material from https://apexlogicsglobalsolutions.com \n • Reproduce, duplicate or copy material from https://apexlogicsglobalsolutions.com \n • Redistribute content from https://apexlogicsglobalsolutions.com This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the Free Terms and Conditions Generator."
+      },
+      {
+        "title": "User Comments",
+        "content": "Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Apex Logics Global Solutions LLC does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Apex Logics Global Solutions LLC,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Apex Logics Global Solutions LLC shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website. Apex Logics Global Solutions LLC reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions. You warrant and represent that: \n • You are entitled to post the Comments on our website and have all necessary licenses and consents to do so; \n • The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party; \n • The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy \n • The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity. You hereby grant Apex Logics Global Solutions LLC a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media."
+      },
+      {
+        "title": "Hyperlinking",
+        "content": "The following organizations may link to our Website without prior written approval: \n • Government agencies; \n • Search engines; \n • News organizations; \n • Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and \n • System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site. These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party's site. We may consider and approve other link requests from the following types of organizations: \n • commonly-known consumer and/or business information sources; \n • dot.com community sites; \n • associations or other groups representing charities; \n • online directory distributors; \n • internet portals; \n • accounting, law and consulting firms; and \n • educational institutions and trade associations. We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Apex Logics Global Solutions LLC; and (d) the link is in the context of general resource information. These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site. If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Apex Logics Global Solutions LLC. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response. Approved organizations may hyperlink to our Website as follows: \n • By use of our corporate name; or \n • By use of the uniform resource locator being linked to; or \n • By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site. No use of Apex Logics Global Solutions LLCs logo or other artwork will be allowed for linking absent a trademark license agreement."
+      },
+      {
+        "title": "iFrames",
+        "content": "Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website."
+      },
+      {
+        "title": "Content Liability",
+        "content": "We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights."
+      },
+      {
+        "title": "Reservation of Rights",
+        "content": "We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it's linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions."
+      },
+      {
+        "title": "Removal of Links",
+        "content": "If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly."
+      },
+      {
+        "title": "Disclaimer",
+        "content": "We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date. To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will: \n • limit or exclude our or your liability for death or personal injury; \n • limit or exclude our or your liability for fraud or fraudulent misrepresentation; \n • limit any of our or your liabilities in any way that is not permitted under applicable law; or \n • exclude any of our or your liabilities that may not be excluded under applicable law. The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty. As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature."
+      }
+    ],
+    "privacy": [
+      {
+        "title": "Privacy Policy",
+        "content": "This privacy policy has been compiled to better serve those who are concerned with how their 'Personally identifiable information' (PII) is being used online. PII, as used in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website."
+      },
+      {
+        "title": "Information Collection",
+        "content": "What personal information do we collect from the people that visit our blog, website or app? When contacting us on our site, you may be asked to enter your name, email address, phone number or other details to help you with your experience. When do we collect information? We collect information from you when you fill out a form or enter information on our site."
+      },
+      {
+        "title": "Use of Information",
+        "content": "How do we use your information? We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:\n • To personalize user's experience and to allow us to deliver the type of content and product offerings in which you are most interested.\n • To improve our website in order to better serve you. \n • To allow us to better service you in responding to your customer service requests \n • To administer a contest, promotion, survey or other site feature. \n • To send periodic emails regarding your order or other products and services."
+      },
+      {
+        "title": "Information Protection",
+        "content": "How do we protect visitor information? \n • We do not use vulnerability scanning and/or scanning to PCI standards. \n • We do not use Malware Scanning. \n • We do not use an SSL certificate. \n • We only provide articles and information on our website. Other than your contact information for the specific purposes of responding to your inquiry, we never ask for personal or private information."
+      },
+      {
+        "title": "Cookies",
+        "content": "Do we use cookies? Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your Web browser (if you allow) that enables the site's or service provider's systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future. We use cookies to: \n • Understand and save user's preferences for future visits. \n • Keep track of advertisements. \n • Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third party services that track this information on our behalf. \n • You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser (like Internet Explorer) settings. Each browser is a little different, so look at your browser's Help menu to learn the correct way to modify your cookies. If users disable cookies in their browser: If you disable cookies off, some features will be disabled. It will turn off some of the features that make your site experience more efficient and some of our services will not function properly."
+      },
+      {
+        "title": "Third Party Disclosure",
+        "content": "We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information unless we provide you with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others' rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses."
+      },
+      {
+        "title": "Third Party Links",
+        "content": "Occasionally, at our discretion, we may include or offer third party products or services on our website. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites."
+      },
+      {
+        "title": "Google Analytics",
+        "content": "We use Google Analytics on our website. We have implemented the following: \n • Demographics and Interests Reporting We, along with third-party vendors such as Google, use first-party cookies (such as the Google Analytics cookies) and third-party cookies (such as the DoubleClick cookie) or other third-party identifiers together to compile data regarding user interactions with ad impressions, and other ad service functions as they relate to our website."
+      },
+      {
+        "title": "California Online Privacy Protection Act",
+        "content": "CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law's reach stretches well beyond California to require a person or company in the United States (and conceivably the world) that operates websites collecting personally identifiable information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals with whom it is being shared, and to comply with this policy. According to CalOPPA we agree to the following: \n • Users can visit our site anonymously. \n • Once this privacy policy is created, we will add a link to it on our home page, or as a minimum on the first significant page after entering our website. \n • Our Privacy Policy link includes the word 'Privacy', and can be easily be found on the page specified above. Users will be notified of any privacy policy changes: \n • On our Privacy Policy Page Users are able to change their personal information: \n • By emailing us"
+      },
+      {
+        "title": "Do Not Track",
+        "content": "How does our site handle do not track signals? We honor do not track signals and do not track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place. Does our site allow third party behavioral tracking? It's also important to note that we do not allow third party behavioral tracking."
+      },
+      {
+        "title": "COPPA",
+        "content": "When it comes to the collection of personal information from children under 13, the Children's Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, the nation's consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children's privacy and safety online. We do not specifically market to children under 13."
+      },
+      {
+        "title": "Fair Information Practices",
+        "content": "The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information. In order to be in line with Fair Information Practices we will take the following responsive action, should a data breach occur: We will notify the users via email: \n • Within 7 business days We also agree to the individual redress principle, which requires that individuals have a right to pursue legally enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or a government agency to investigate and/or prosecute non-compliance by data processors."
+      },
+      {
+        "title": "CAN SPAM Act",
+        "content": "The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations. We collect your email address in order to: \n • Send information, respond to inquiries, and/or other requests or questions. \n • Market to our mailing list or continue to send emails to our clients after the original transaction has occurred To be in accordance with CANSPAM we agree to the following: \n • NOT use false, or misleading subjects or email addresses \n • Identify the message as an advertisement in some reasonable way \n • Include the physical address of our business or site headquarters \n • Monitor third party email marketing services for compliance, if one is used \n • Honor opt-out/unsubscribe requests quickly \n • Allow users to unsubscribe by using the link at the bottom of each email If at any time you would like to unsubscribe from receiving future emails, you can: \n • Follow the instructions at the bottom of each email and we will promptly remove you from ALL correspondence"
+      },
+      {
+        "title": "Contact Information",
+        "content": "If there are any questions regarding this privacy policy you may contact us using the information below. \n https://apexlogicsglobalsolutions.com \nApex Logics Global Solutions\n LLC 30 North Gould Solutions LLC\n Sheridan, Whyoming 82801\n apexlogicglobalsolutions@gmail.com"
       }
     ]
   }

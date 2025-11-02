@@ -10,15 +10,13 @@ export const useContent = () => {
     whyUsSection: data.whyUsSection,
     features: data.features,
     pricing: data.pricing,
-    testimonials: data.testimonials,
     faq: data.faq,
     footer: data.footer,
+    legal: data.legal,
 
     // Helper functions
     getFeatureById: (id: number) =>
       data.features.featuresList.find((f) => f.id === id),
-    getTestimonialById: (id: number) =>
-      data.testimonials.find((t) => t.id === id),
     getFAQById: (id: number) => data.faq.find((f) => f.id === id),
     getWhyUsCardById: (id: string) =>
       data.whyUsSection.whyUsCards.find((c) => c.id === id),
@@ -30,6 +28,6 @@ export const useHero = () => useContent().hero;
 export const useWhyUs = () => useContent().whyUsSection;
 export const useFeatures = () => useContent().features;
 export const usePricing = () => useContent().pricing;
-export const useTestimonials = () => useContent().testimonials;
 export const useFAQ = () => useContent().faq;
 export const useFooter = () => useContent().footer;
+export const useLegal = () => useContent().legal;

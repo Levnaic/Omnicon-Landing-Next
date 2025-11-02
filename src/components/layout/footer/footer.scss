@@ -1,0 +1,34 @@
+@use "variables" as v;
+
+.footer {
+  padding: v.$spacing-2xl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: v.$spacing-lg;
+  background-color: v.$primary-color;
+  color: v.$white;
+
+  &-support-link {
+    text-decoration: none;
+    color: v.$white;
+    font-weight: v.$font-weight-semibold;
+  }
+
+  &-privacy-policy-terms-links-container {
+    display: flex;
+    justify-content: center;
+    gap: v.$spacing-sm;
+  }
+
+  &-link {
+    color: v.$white;
+  }
+
+  &-company-info {
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacing-sm;
+  }
+}

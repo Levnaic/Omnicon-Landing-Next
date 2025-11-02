@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -11,13 +13,13 @@
   font-size: 20px;
 
   &.solid {
-    background: #7c5cff;
-    color: white;
+    background: v.$primary-color;
+    color: v.$white;
     border: none;
 
     &:hover {
-      background: #6a4de3;
-      color: white;
+      background: v.$primary-hover;
+      color: v.$white;
     }
   }
 
@@ -27,7 +29,7 @@
     color: #111;
 
     &:hover {
-      border-color: #7c5cff;
+      border-color: v.$primary-hover;
       background: rgba(124, 92, 255, 0.1);
       color: #0e0e0e;
     }
