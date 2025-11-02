@@ -9,8 +9,8 @@
 
 -stranice
 
--1.hero sa loadconecta sa featurima
+-home page
 -2.featuri
 -3.pricing
--4.fa
+-4.faq
 -5.about us/contact us

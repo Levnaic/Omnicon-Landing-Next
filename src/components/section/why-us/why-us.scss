@@ -3,6 +3,9 @@
 
 .why-us {
   @include m.section-spacing;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &-title {
     text-align: center;
