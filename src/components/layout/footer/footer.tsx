@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <Section id="footer">
       <div className="footer">
-        <h2>{company.name}</h2>
+        <h2>{company.fullName}</h2>
         <Link href={"support"} className="footer-support-link">
           {company.supportEmail}
         </Link>
